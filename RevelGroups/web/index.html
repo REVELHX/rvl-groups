@@ -1,0 +1,233 @@
+<html>
+
+<head>
+  <title>RevelGroups</title>
+
+  <link href="https://cdn.jsdelivr.net/gh/loadingio/ldLoader@v1.0.0/dist/ldld.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/gh/loadingio/ldLoader@v1.0.0/dist/ldld.min.js" rel="stylesheet"
+    type="text/javascript">
+
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <div id="LoadingScreen">
+    <div class="loading-header">
+      <div class="loading-logo"></div>
+      <div class="loading-title">GROUPS</div>
+    </div>
+
+
+    <div class="loading-container">
+      <div class="loading-titledescription">LOADING INFORMATION</div>
+      <div class="loading-titledescription">PLEASE WAIT..</div>
+    </div>
+
+    <div class="loading-boxprotect">
+      <div class="loader-animate">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="frontpage-footer">
+      <div class="fasicon" style="font-size: 15px; color: rgba(255, 255, 255, 0.571);"><i
+          class="fa-regular fa-registered"></i></div>
+      <div class="allrightsreserved">Script developed by REVEL</div>
+    </div>
+  </div>
+  <div id="NewGroup">
+    <div id="my-loader" class="text-danger ldld bare"></div>
+    <div class="ng-header">
+      <div class="ng-logo"></div>
+      <div class="ng-title">GROUPS</div>
+    </div>
+    <div class="ng-container">
+      <div class="ng-titledescription">GROUP CREATOR</div>
+      <input id="ng-value-name" class="ng-groupname" placeholder="&#xf54c; Group name" maxlength="15"></input>
+      <div id="ng-button-clicked" class="ng-button">CREATE</div>
+    </div>
+    <div class="ng-checkcontainer">
+      <input type="checkbox" id="ng-confirm" name="subscribe" value="ng-confirm">
+      <label for="ng-confirm" class="ng-agree">I AGREE TO PAY €1000</label>
+    </div>
+
+    <div class="ng-footer">
+      <div class="ng-infoextra">The name of the created group cannot be changed in the future! think before creating!
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <div class="frontpage-header">
+      <div class="frontpage-header-left">
+        <button class="header-buttons" type="button">MAIN</button>
+        <button id="members-button" class="header-buttons" type="button">MEMBERS</button>
+        <button class="header-buttons" type="button">ACTIONS</button>
+        <button class="header-buttons" type="button">SETTINGS</button>
+      </div>
+      <div class="frontpage-header-right">
+        <div class="logo"></div>
+        <div class="title">GROUPS</div>
+      </div>
+    </div>
+    <div class="frontpage-info">
+      <div class="frontpage-info-up">
+        <div class="frontpage-info-card-money">
+          <div class="card-container-left">
+            <div class="card-fasicon-coins"><i class="fa-solid fa-coins"></i></div>
+          </div>
+          <div class="card-container-right">
+            <div class="card-description-coins">Group Money</div>
+            <div class="card-label">6775532<span>€</span></div>
+          </div>
+
+        </div>
+
+        <div class="frontpage-info-card-ad">
+          <div class="card-container-left-announce">
+            <div class="card-fasicon-announce"><i class="fa-solid fa-bullhorn"></i></div>
+          </div>
+          <div class="card-container-center">
+            <div class="card-description-announce">Announce By</div>
+            <div class="card-label-announce">NOME</div>
+          </div>
+        </div>
+
+        <div class="frontpage-info-card-rank">
+          <div class="card-container-left">
+            <div class="card-fasicon-rank"><i class="fa-solid fa-star"></i></div>
+          </div>
+          <div class="card-container-right">
+            <div class="card-description-rank">Group Rank</div>
+            <div class="card-label">Bronze</div>
+          </div>
+        </div>
+      </div>
+      <div class="frontpage-info-down">
+        <div class="frontpage-info-card"></div>
+      </div>
+      <div class="frontpage-announce-text">
+        <div class="card-label">Only 60 caracters works on this announce! dev by revel wip</div>
+      </div>
+      <div class="frontpage-info-down">
+        <div class="frontpage-info-card"></div>
+      </div>
+    </div>
+    <div class="frontpage-personalinfo">
+      <div class="frontpage-personalinfo-container">
+        <div class="group-owner">
+          <div class="personalinfo-container-left">
+            <div class="fasicon"><i class="fa-solid fa-khanda"></i></div>
+          </div>
+          <div class="personalinfo-container-right">
+            <div class="description-personalinfo">Group Owner</div>
+            <div id="GroupBossName" class="personalinfo-label">NOME</div>
+          </div>
+        </div>
+        <div class="group-name">
+          <div class="personalinfo-container-up">
+            <div class="fasicon"><i class="fa-solid fa-skull"></i></div>
+          </div>
+          <div class="personalinfo-container-down">
+            <div id="GroupName" class="personalinfo-label">NOME</div>
+          </div>
+
+        </div>
+        <div class="group-owner">
+          <div class="personalinfo-container-left">
+            <div class="fasicon"><i class="fa-solid fa-people-group"></i></div>
+          </div>
+          <div class="personalinfo-container-right">
+            <div class="description-personalinfo">Number of members</div>
+            <div id="GroupTotalMembers" class="personalinfo-label">15</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frontpage-footer">
+      <div class="fasicon" style="font-size: 15px; color: rgba(255, 255, 255, 0.571);"><i
+          class="fa-regular fa-registered"></i></div>
+      <div class="allrightsreserved">Script developed by REVEL</div>
+    </div>
+  </div>
+
+  <div id="members-container">
+    <div class="frontpage-header">
+      <div class="frontpage-header-left">
+        <button class="header-buttons" type="button">MAIN</button>
+        <button id="members-button" class="header-buttons" type="button">MEMBERS</button>
+        <button class="header-buttons" type="button">ACTIONS</button>
+        <button class="header-buttons" type="button">SETTINGS</button>
+      </div>
+      <div class="frontpage-header-right">
+        <div class="logo"></div>
+        <div class="title">GROUPS</div>
+      </div>
+    </div>
+
+    <div class="row" id="page_info">
+      <div class="row">
+        <div class="table-container">
+          <div class="line-table">
+            <div class="frontpage-info-card"></div>
+          </div>
+          <div id="tabledata">
+            <div class="members-table">
+              <div class="divide2">
+                <div class="personalinfo-label">NOME</div>
+              </div>
+              <div class="divide">
+                <div class="personalinfo-label">KICK</div>
+                <div class="personalinfo-label">BOSS</div>
+              </div>
+            </div>
+          </div>
+          <div class="line-table">
+            <div class="frontpage-info-card"></div>
+          </div>
+          <div id="tabledata">
+            <div class="members-table">
+              <div class="divide2">
+                <div class="personalinfo-label">NOME</div>
+              </div>
+              <div class="divide">
+                <div class="personalinfo-label">KICK</div>
+                <div class="personalinfo-label">BOSS</div>
+              </div>
+            </div>
+          </div>
+          <div class="line-table">
+            <div class="frontpage-info-card"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="frontpage-footer">
+      <div class="fasicon" style="font-size: 15px; color: rgba(255, 255, 255, 0.571);"><i
+          class="fa-regular fa-registered"></i></div>
+      <div class="allrightsreserved">Script developed by REVEL</div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://kit.fontawesome.com/f6249ed469.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <script src="./fontawesome.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,828 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../web/fonts/Gilroy-Light.otf);
+}
+
+/** COR #01252d **/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Gilroy;
+    user-select: none;
+    
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 800px;
+  width: 1300px;
+  background: linear-gradient(150deg, #01252d98 0%, #000e11 100%);
+  border-radius: 1%;
+
+}
+
+.frontpage-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    background: none !important;
+    height: 100px;
+    width: 1300px;
+ 
+ }
+
+.frontpage-header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important;
+    height: 100px;
+    width: 900px;
+    gap: 50px;
+}
+
+.frontpage-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none !important;
+    height: 100px;
+    width: 400px;  
+    
+}
+
+.logo {
+    height: 96px;
+    width: 96px; 
+    background: url("https://i.imgur.com/HuA4dC6.png");
+}
+.title {
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.header-buttons {
+    background: none;
+	color: inherit;
+	padding: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.527);
+    font-family: Gilroy;
+    font-size: 15px;
+    transition: all 0.2s ease 0s;
+}
+
+.header-buttons:hover {
+    color: white;
+    border-bottom: #15dcff6d;
+    border-bottom-style: solid;
+    border-radius: 2px;
+    
+    
+    
+}
+
+
+.frontpage-personalinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: none !important;
+    height: 300px;
+    width: 1300px;
+ 
+ }
+
+
+
+.frontpage-personalinfo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 1300px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    border-style: solid;
+    gap: 25px;
+  }
+
+.group-owner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 400px;
+    background-color: none !important;
+    gap: 20px;
+}
+
+.group-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    background-color: none !important;
+    gap: 5px;
+}
+.personalinfo-container-down,
+.personalinfo-container-left {
+    background-color: none !important;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.personalinfo-container-up,
+.personalinfo-container-right {
+    background-color: none !important;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.personalinfo-container-up,
+.personalinfo-container-down {
+    align-items: center;
+    width: 350px;
+}
+
+.personalinfo-container-up {
+    padding-top: 35px;
+}
+
+.personalinfo-container-down {
+    padding-bottom: 30px;
+}
+
+
+
+.description-personalinfo {
+    color: #15dcff4b;
+    font-family: Gilroy;
+    font-size: 13px; 
+    font-weight: bold;
+}
+
+
+
+.personalinfo-label {
+    color: white;
+    font-family: Gilroy;
+    font-size: 30px;
+}
+
+.fasicon {
+    color: #15dcff6d;
+    font-size: 60px;
+}
+
+.fasicon:hover {
+    animation: tilt-shaking 0.25s infinite;
+    
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+
+.frontpage-info-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: none !important;
+    height: 200px;
+    width: 1300px;
+ }
+
+.frontpage-info-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: none !important;
+    height: 100px;
+    width: 1300px;
+ }
+
+
+.frontpage-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 3px;
+    width: 1000px;
+    background-color: #15dcff4b;
+    gap: 15px;
+ }
+
+ .frontpage-info-card-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 130px;
+    width: 380px;
+    background-color: #00000052;
+    border-left-color: transparent;
+    border-top-color: #15dcff4b;
+    border-bottom-color: #15dcff4b;
+    border-right-color: #15dcff4b;
+    border-radius: 1px;
+    border-style: solid;
+    gap: 15px;
+    transition: all 0.2s ease 0s;
+ }
+
+ 
+
+
+ .frontpage-info-card-money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 130px;
+    width: 380px;
+    background-color: #00000052;
+    border-right-color: transparent;
+    border-top-color: #15dcff4b;
+    border-bottom-color: #15dcff4b;
+    border-left-color: #15dcff4b;
+    border-radius: 1px;
+    border-style: solid;
+    gap: 15px;
+    transition: all 0.2s ease 0s;
+ }
+
+
+ .frontpage-info-card-ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 170px;
+    width: 420px;
+    background-color: #00000052;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #15dcff4b;
+    gap: 15px;
+
+ }
+
+.card-container-left-announce,
+.card-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 100px;
+    width: 100px;
+    background-color: none !important;
+    margin-left: 50px;
+
+ }
+
+
+ .card-container-center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 200px; 
+    background-color: none !important;
+    gap: 5px;
+    
+
+ }
+
+ .card-container-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 200px; 
+    background-color: none !important;
+    gap: 5px;
+    
+
+ }
+
+
+
+.frontpage-info-card-money:hover,
+.frontpage-info-card-rank:hover {
+    background-color: #00000033;
+    
+}
+
+.card-fasicon {
+ color: #15dcff6d;
+ font-size: 50px;
+}
+
+/** Rank Icon **/
+
+.card-fasicon-rank {
+ color: #bd61166d;
+ font-size: 50px;
+
+}
+
+.card-description-rank {
+    color: #bd61166d;
+    font-family: Gilroy;
+    font-size: 13px; 
+    font-weight: bold;
+}
+
+.card-label {
+    color: white;
+    font-family: Gilroy;
+    font-size: 20px;
+}
+
+
+/** Rank Icon **/
+
+
+
+
+
+/** Coin Icon **/
+
+.card-fasicon-coins {
+ color: #f7fa34c0;
+ font-size: 50px;
+   
+}
+
+.card-description-coins {
+    color: #f7fa34c0;
+    font-family: Gilroy;
+    font-size: 13px; 
+    font-weight: bold;
+}
+   
+
+/** Coin Icon **/
+
+
+/** Announce Icon **/
+
+.card-fasicon-announce {
+    color: #fd0505c0;
+    font-size: 53px;
+      
+   }
+   
+   .card-description-announce {
+    color: #fd0505c0;
+    font-family: Gilroy;
+    font-size: 15px; 
+    font-weight: bold;
+   }
+      
+   
+   /** Announce Icon **/
+
+
+
+.card-label-announce {
+    color: white;
+    font-family: Gilroy;
+    font-size: 25px;
+}
+
+
+.frontpage-announce-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 10px;
+    width: 1000px;
+    margin-left: 150px;
+    background-color: none !important;
+}
+
+
+
+
+ 
+.frontpage-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    background-color: none !important;
+    height: 100px;
+    width: 1300px;
+    gap: 5px;
+ 
+ }
+
+ .allrightsreserved {
+    font-family: Gilroy;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.571);
+ }
+
+/** PAGINA DE QUEM NAO TEM GRUPO / CRIAR UM **/
+
+
+#NewGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 360px;
+    width: 500px;
+    background: linear-gradient(150deg, #01252d98 0%, #000e11 100%);
+    border-radius: 1%;
+
+}
+
+.loading-header,
+.ng-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100px;
+    width: 500px;
+    background-color: none !important;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+}
+
+.loading-container,
+.ng-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    background-color: none !important;
+    gap: 25px;   
+}
+
+
+.loading-container {
+    height: 200px;
+
+}
+.ng-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 500px;
+    background-color: none;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+}
+
+.ng-infoextra {
+    font-size: 10px;
+    font-family: Gilroy;
+    color: rgba(255, 255, 255, 0.458);
+    
+}
+
+.loading-logo,
+.ng-logo {
+
+    height: 96px;
+    width: 96px; 
+    background: url("https://i.imgur.com/HuA4dC6.png");
+}
+
+.loading-title,
+.ng-title {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.loading-titledescription,
+.ng-titledescription {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.ng-groupname {
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #04353da4;
+    border-radius: 5px;
+    border: transparent;
+}
+
+::placeholder {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Font Awesome 5 Pro', 'Gilroy';
+    padding-left: 15px;
+    color: white;
+    opacity: 30%;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #012e37;
+    box-shadow: 0 0 10px #012e37;
+}
+
+
+.ng-button {
+    background: none;
+	color: inherit;
+	padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    color: rgba(255, 255, 255, 0.527);
+    font-family: Gilroy;
+    font-size: 15px;
+    border-bottom: transparent;
+    border-bottom-style: solid;
+    border-radius: 1px;
+}
+
+.ng-button:hover {
+    color: white;
+    border-bottom: #15dcff6d;
+    border-bottom-style: solid;
+    border-radius: 1px;
+    
+    
+}
+
+.ng-checkcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 30px;
+    width: 500px;
+    background-color: none !important;
+}
+
+
+
+
+.ng-agree {
+    font-size: 12px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+   
+}
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\0058";
+    border: 0.1em solid rgb(252, 252, 252);
+    border-radius: 15%;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.3em;
+    padding-bottom: 0.3em;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: #15dcff6d;
+    border-color: #15dcff6d;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #15dcff6d;
+    border-color: #15dcff6d;
+  }
+
+
+
+
+
+
+
+
+  
+
+  /**  LOADING SCREEN **/
+
+
+
+#LoadingScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 360px;
+    width: 500px;
+    background: linear-gradient(150deg, #01252d98 0%, #000e11 100%);
+    border-radius: 1%;
+   
+
+
+}
+
+.loading-boxprotect {
+    height: 90px;
+    width: 500px;
+}
+
+.loader-animate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /* Loader circles */
+  .loader-animate > span {
+    background: #15dcffad;
+    border-radius: 50%;
+    margin: 3rem 0.5rem;
+    animation: bouncingLoader 0.6s infinite alternate;
+  }
+  
+  .loader-animate > span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loader-animate > span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Define the animation called bouncingLoader. */
+  @keyframes bouncingLoader {
+    from {
+      width: 0.1rem;
+      height: 0.1rem;
+      opacity: 1;
+      transform: translate3d(0);
+    }
+    to {
+      width: 1rem;
+      height: 1rem;
+      opacity: 0.1;
+      transform: translate3d(0, -1rem, 0);
+    }
+  }
+
+
+
+
+  /** MEMBERS PAGE **/
+
+
+#members-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 800px;
+  width: 1300px;
+  background: linear-gradient(150deg, #01252d98 0%, #000e11 100%);
+  border-radius: 1%;
+
+}
+
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 1000px;
+    background: linear-gradient(150deg, #01181d98 0%, #000e11 100%);
+    border-radius: 1%;
+    gap: 15px;
+    border-color: #15dcff6d;
+    border-style: solid;
+  
+  }
+
+.members-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  width: 1000px;
+  background: none;
+  border-radius: 1%;
+  background: linear-gradient(150deg, #01252d98 0%, #000e11 100%); 
+}
+
+.divide2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50px;
+    width: 490px;
+    background: none;
+    border-radius: 1%;
+    gap: 15px;
+    background-color: none !important
+  }
+
+.divide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 50px;
+    width: 490px;
+    background: none;
+    border-radius: 1%;
+    gap: 15px;
+    background-color: none !important
+  }
+
+.line-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: none !important;
+    height: 3px;
+    width: 990px;
+ }
